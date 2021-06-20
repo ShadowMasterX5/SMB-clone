@@ -173,3 +173,28 @@ Received Import Request.
   path: Assets/Tiles/bg_customsmblosttileset.png
   artifactKey: Guid(da446f1f28da1914684229c678860fca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Tiles/bg_customsmblosttileset.png using Guid(da446f1f28da1914684229c678860fca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb6c7726390b2029d7d4bf566602a114') in 0.607123 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18193.303455 seconds.
+  path: Assets/Fonts/prstart.ttf
+  artifactKey: Guid(d546287523c5148248a0174c4515bdcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/prstart.ttf using Guid(d546287523c5148248a0174c4515bdcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed2b55c6c7f1ff69beca3d25c94d94db') in 0.140206 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10725.183123 seconds.
+  path: Assets/Sprites/enemies.png
+  artifactKey: Guid(7eb68ac47e5fe4bbca37c767951ce034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/enemies.png using Guid(7eb68ac47e5fe4bbca37c767951ce034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '877e35516a7f64b4d5824123811e2ff8') in 0.331615 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.396097 seconds.
+  path: Assets/Sprites/enemies.png
+  artifactKey: Guid(7eb68ac47e5fe4bbca37c767951ce034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/enemies.png using Guid(7eb68ac47e5fe4bbca37c767951ce034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f547a2784c44b31d561e6175fc8127b1') in 0.228905 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.333481 seconds.
+  path: Assets/Sprites/enemies.png
+  artifactKey: Guid(7eb68ac47e5fe4bbca37c767951ce034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/enemies.png using Guid(7eb68ac47e5fe4bbca37c767951ce034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6f9a4a66dff247da4172f69076d9fde') in 0.266103 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
