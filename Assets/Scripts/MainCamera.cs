@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class MainCamera : MonoBehaviour {
 	public GameObject target;
-	public float followAhead = 2.6f;
-	public float smoothing = 5;
+	public float followAhead = 41.6f;
+	public float smoothing = 80;
 	public bool canMove;
 	public bool canMoveBackward = false;
 

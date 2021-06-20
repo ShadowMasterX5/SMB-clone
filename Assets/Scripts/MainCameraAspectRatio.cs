@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MainCameraAspectRatio : MonoBehaviour {
-	public Vector2 targetAspects = new Vector2(16f, 15f);
+	public Vector2 targetAspects = new Vector2(320f, 240f);
 
 	void Start() {
 		float targetaspect = targetAspects.x / targetAspects.y;
