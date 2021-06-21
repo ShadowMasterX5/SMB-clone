@@ -2066,12 +2066,16 @@ PrefabInstance:
       value: 76
       objectReference: {fileID: 0}
     - target: {fileID: 4566420616817328, guid: 2edb2b8e476654f0ea2807c7a8261a76, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -48
+      objectReference: {fileID: 0}
+    - target: {fileID: 4566420616817328, guid: 2edb2b8e476654f0ea2807c7a8261a76, type: 3}
       propertyPath: m_LocalPosition.y
       value: 96
       objectReference: {fileID: 0}
     - target: {fileID: 4609822613767340, guid: 2edb2b8e476654f0ea2807c7a8261a76, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 166.5
+      value: 72
       objectReference: {fileID: 0}
     - target: {fileID: 4609822613767340, guid: 2edb2b8e476654f0ea2807c7a8261a76, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2122,10 +2126,30 @@ PrefabInstance:
       propertyPath: m_BackGroundColor.r
       value: 0.3647059
       objectReference: {fileID: 0}
+    - target: {fileID: 50873520463771854, guid: 2edb2b8e476654f0ea2807c7a8261a76,
+        type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 50873520463771854, guid: 2edb2b8e476654f0ea2807c7a8261a76,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 50873520463771854, guid: 2edb2b8e476654f0ea2807c7a8261a76,
+        type: 3}
+      propertyPath: m_GravityScale
+      value: 84.8
+      objectReference: {fileID: 0}
     - target: {fileID: 58965874253323938, guid: 2edb2b8e476654f0ea2807c7a8261a76,
         type: 3}
       propertyPath: m_Radius
       value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 58965874253323938, guid: 2edb2b8e476654f0ea2807c7a8261a76,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 58965874253323938, guid: 2edb2b8e476654f0ea2807c7a8261a76,
         type: 3}
@@ -2210,12 +2234,12 @@ PrefabInstance:
     - target: {fileID: 61786470773063972, guid: 2edb2b8e476654f0ea2807c7a8261a76,
         type: 3}
       propertyPath: m_Offset.x
-      value: -256
+      value: -160
       objectReference: {fileID: 0}
     - target: {fileID: 61786470773063972, guid: 2edb2b8e476654f0ea2807c7a8261a76,
         type: 3}
       propertyPath: m_Offset.y
-      value: 48
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 61871369003808298, guid: 2edb2b8e476654f0ea2807c7a8261a76,
         type: 3}
@@ -2324,6 +2348,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114750208195470174, guid: 2edb2b8e476654f0ea2807c7a8261a76,
         type: 3}
+      propertyPath: lives
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114750208195470174, guid: 2edb2b8e476654f0ea2807c7a8261a76,
+        type: 3}
+      propertyPath: timeLeft
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 114750208195470174, guid: 2edb2b8e476654f0ea2807c7a8261a76,
+        type: 3}
+      propertyPath: marioSize
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114750208195470174, guid: 2edb2b8e476654f0ea2807c7a8261a76,
+        type: 3}
       propertyPath: levelMusic
       value: 
       objectReference: {fileID: 8300000, guid: a396fb5db437f453d89c54963e7b9719, type: 3}
@@ -2332,6 +2371,11 @@ PrefabInstance:
       propertyPath: levelMusicHurry
       value: 
       objectReference: {fileID: 8300000, guid: 980db8ff7fdfd4de9b676bef749ea0a7, type: 3}
+    - target: {fileID: 114750208195470174, guid: 2edb2b8e476654f0ea2807c7a8261a76,
+        type: 3}
+      propertyPath: isInvincibleStarman
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 114750208195470174, guid: 2edb2b8e476654f0ea2807c7a8261a76,
         type: 3}
       propertyPath: stompBounceVelocity.y
@@ -6997,6 +7041,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4908287474821086, guid: 8130008fbd8044b4e94595114a970409, type: 3}
       propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114310586089754620, guid: 8130008fbd8044b4e94595114a970409,
+        type: 3}
+      propertyPath: lives
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114310586089754620, guid: 8130008fbd8044b4e94595114a970409,
+        type: 3}
+      propertyPath: timeLeft
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114310586089754620, guid: 8130008fbd8044b4e94595114a970409,
+        type: 3}
+      propertyPath: marioSize
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -17440,8 +17499,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 61071701850674578, guid: 8efd63662528e4a068f61395fc9d575d,
         type: 3}
+      propertyPath: m_Size.x
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 61071701850674578, guid: 8efd63662528e4a068f61395fc9d575d,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 61071701850674578, guid: 8efd63662528e4a068f61395fc9d575d,
+        type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61071701850674578, guid: 8efd63662528e4a068f61395fc9d575d,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 212048729222405628, guid: 8efd63662528e4a068f61395fc9d575d,
         type: 3}

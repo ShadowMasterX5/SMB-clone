@@ -72,7 +72,7 @@ public class LevelManager : MonoBehaviour {
 	public int oneupBonus = 0;
 	public int breakBlockBonus = 50;
 
-	public Vector2 stompBounceVelocity = new Vector2 (0, 15);
+	public Vector2 stompBounceVelocity = new Vector2 (0, 165);
 
 	public bool gamePaused;
 	public bool timerPaused;
@@ -84,7 +84,8 @@ public class LevelManager : MonoBehaviour {
 	}
 
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
 		t_GameStateManager = FindObjectOfType<GameStateManager>();
 		RetrieveGameState ();
 
@@ -111,7 +112,8 @@ public class LevelManager : MonoBehaviour {
 		Debug.Log (this.name + " Start: current scene is " + SceneManager.GetActiveScene ().name);
 	}
 
-	void RetrieveGameState() {
+	void RetrieveGameState() 
+	{
 		marioSize = t_GameStateManager.marioSize;
 		lives = t_GameStateManager.lives;
 		coins = t_GameStateManager.coins;
@@ -122,8 +124,10 @@ public class LevelManager : MonoBehaviour {
 
 
 	/****************** Timer */
-	void Update() {
-		if (!timerPaused) {
+	void Update() 
+	{
+		if (!timerPaused) 
+		{
 			timeLeft -= Time.deltaTime / .4f; // 1 game sec ~ 0.4 real time sec
 			SetHudTime ();
 		}
@@ -138,7 +142,8 @@ public class LevelManager : MonoBehaviour {
 			}
 		}
 
-		if (timeLeftInt <= 0) {
+		if (timeLeftInt <= 0) 
+		{
 			MarioRespawn (true);
 		}
 
@@ -158,7 +163,8 @@ public class LevelManager : MonoBehaviour {
 	float pauseGamePrevTimeScale;
 	bool pausePrevMusicPaused;
 
-	IEnumerator PauseGameCo() {
+	IEnumerator PauseGameCo() 
+	{
 		gamePaused = true;
 		pauseGamePrevTimeScale = Time.timeScale;
 
@@ -170,8 +176,10 @@ public class LevelManager : MonoBehaviour {
 
 		// Set any active animators that use unscaled time mode to normal
 		unscaledAnimators.Clear();
-		foreach (Animator animator in FindObjectsOfType<Animator>()) {
-			if (animator.updateMode == AnimatorUpdateMode.UnscaledTime) {
+		foreach (Animator animator in FindObjectsOfType<Animator>()) 
+		{
+			if (animator.updateMode == AnimatorUpdateMode.UnscaledTime) 
+			{
 				unscaledAnimators.Add (animator);
 				animator.updateMode = AnimatorUpdateMode.Normal;
 			}
@@ -182,18 +190,21 @@ public class LevelManager : MonoBehaviour {
 		Debug.Log (this.name + " PauseGameCo stops: records prevTimeScale=" + pauseGamePrevTimeScale.ToString());
 	}
 
-	IEnumerator UnpauseGameCo() {
+	IEnumerator UnpauseGameCo() 
+	{
 		pauseSoundSource.Play();
 		yield return new WaitForSecondsRealtime (pauseSoundSource.clip.length);
 
 		musicPaused = pausePrevMusicPaused;
-		if (!musicPaused) {
+		if (!musicPaused) 
+		{
 			musicSource.UnPause ();
 		}
 		soundSource.UnPause ();
 
 		// Reset animators
-		foreach (Animator animator in unscaledAnimators) {
+		foreach (Animator animator in unscaledAnimators) 
+		{
 			animator.updateMode = AnimatorUpdateMode.UnscaledTime;
 		}
 		unscaledAnimators.Clear ();
@@ -205,11 +216,13 @@ public class LevelManager : MonoBehaviour {
 
 
 	/****************** Invincibility */
-	public bool isInvincible() {
+	public bool isInvincible() 
+	{
 		return isInvinciblePowerdown || isInvincibleStarman;
 	}
 
-	public void MarioInvincibleStarman() {
+	public void MarioInvincibleStarman() 
+	{
 		StartCoroutine (MarioInvincibleStarmanCo ());
 		AddScore (starmanBonus, mario.transform.position);
 	}
@@ -234,11 +247,13 @@ public class LevelManager : MonoBehaviour {
 		}
 	}
 
-	void MarioInvinciblePowerdown() {
+	void MarioInvinciblePowerdown() 
+	{
 		StartCoroutine (MarioInvinciblePowerdownCo ());
 	}
 
-	IEnumerator MarioInvinciblePowerdownCo() {
+	IEnumerator MarioInvinciblePowerdownCo() 
+	{
 		isInvinciblePowerdown = true;
 		mario_Animator.SetBool ("isInvinciblePowerdown", true);
 		mario.gameObject.layer = LayerMask.NameToLayer ("Mario After Powerdown");
@@ -250,15 +265,18 @@ public class LevelManager : MonoBehaviour {
 
 
 	/****************** Powerup / Powerdown / Die */
-	public void MarioPowerUp() {
+	public void MarioPowerUp() 
+	{
 		soundSource.PlayOneShot (powerupSound); // should play sound regardless of size
-		if (marioSize < 2) {
+		if (marioSize < 2) 
+		{
 			StartCoroutine (MarioPowerUpCo ());
 		}
 		AddScore (powerupBonus, mario.transform.position);
 	}
 
-	IEnumerator MarioPowerUpCo() {
+	IEnumerator MarioPowerUpCo() 
+	{
 		mario_Animator.SetBool ("isPoweringUp", true);
 		Time.timeScale = 0f;
 		mario_Animator.updateMode = AnimatorUpdateMode.UnscaledTime;
@@ -274,24 +292,32 @@ public class LevelManager : MonoBehaviour {
 		mario_Animator.SetBool ("isPoweringUp", false);
 	}
 
-	public void MarioPowerDown() {
-		if (!isPoweringDown) {
+	public void MarioPowerDown() 
+	{
+		if (!isPoweringDown) 
+		{
 			Debug.Log (this.name + " MarioPowerDown: called and executed");
 			isPoweringDown = true;
 
-			if (marioSize > 0) {
+			if (marioSize > 0) 
+			{
 				StartCoroutine (MarioPowerDownCo ());
 				soundSource.PlayOneShot (pipePowerdownSound);
-			} else {
+			} 
+			else 
+			{
 				MarioRespawn ();
 			}
 			Debug.Log (this.name + " MarioPowerDown: done executing");
-		} else {
+		} 
+		else 
+		{
 			Debug.Log (this.name + " MarioPowerDown: called but not executed");
 		}
 	}
 
-	IEnumerator MarioPowerDownCo() {
+	IEnumerator MarioPowerDownCo() 
+	{
 		mario_Animator.SetBool ("isPoweringDown", true);
 		Time.timeScale = 0f;
 		mario_Animator.updateMode = AnimatorUpdateMode.UnscaledTime;
@@ -309,8 +335,10 @@ public class LevelManager : MonoBehaviour {
 		isPoweringDown = false;
 	}
 
-	public void MarioRespawn(bool timeup = false) {
-		if (!isRespawning) {
+	public void MarioRespawn(bool timeup = false) 
+	{
+		if (!isRespawning) 
+		{
 			isRespawning = true;
 
 			marioSize = 0;
@@ -324,14 +352,18 @@ public class LevelManager : MonoBehaviour {
 			Time.timeScale = 0f;
 			mario.FreezeAndDie ();
 
-			if (timeup) {
+			if (timeup) 
+			{
 				Debug.Log(this.name + " MarioRespawn: called due to timeup");
 			}
 			Debug.Log (this.name + " MarioRespawn: lives left=" + lives.ToString ());
 
-			if (lives > 0) {
+			if (lives > 0) 
+			{
 				ReloadCurrentLevel (deadSound.length, timeup);
-			} else {
+			} 
+			else 
+			{
 				LoadGameOver (deadSound.length, timeup);
 				Debug.Log(this.name + " MarioRespawn: all dead");
 			}
