@@ -1,0 +1,361 @@
+Using pre-set license
+Built from '2021.1/release' branch; Version is '2021.1.10f1 (b15f561b2cef) revision 11624278'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19043.1052; Version 2009; 64bit' Language: 'en' Physical Memory: 15789 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity Editors\2021.1.10f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/gamem/Unity Projects/SMB-clone
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+59919
+Successfully changed project path to: C:/Users/gamem/Unity Projects/SMB-clone
+C:/Users/gamem/Unity Projects/SMB-clone
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 76.82 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.1.10f1 (b15f561b2cef)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity Editors/2021.1.10f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/gamem/Unity Projects/SMB-clone/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1660 Ti (ID=0x2191)
+    Vendor:   NVIDIA
+    VRAM:     5991 MB
+    Driver:   27.21.14.6647
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity Editors/2021.1.10f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity Editors/2021.1.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity Editors/2021.1.10f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56104
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity Editors/2021.1.10f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity Editors/2021.1.10f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity Editors/2021.1.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity Editors/2021.1.10f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity Editors/2021.1.10f1/Editor/Data/PlaybackEngines/LuminSupport/UnityEditor.Lumin.Extensions.dll
+Registered in 0.002634 seconds.
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 79.35 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.718 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2718ms)
+		BeginReloadAssembly (44ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (429ms)
+			LoadAssemblies (43ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (149ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (209ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (79ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (88ms)
+				ProcessInitializeOnLoadMethodAttributes (32ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.088630 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\gamem\Unity Projects\SMB-clone\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\gamem\Unity Projects\SMB-clone\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.995 seconds
+Domain Reload Profiling:
+	ReloadAssembly (996ms)
+		BeginReloadAssembly (131ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (19ms)
+		EndReloadAssembly (810ms)
+			LoadAssemblies (73ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (302ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (299ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (68ms)
+				ProcessInitializeOnLoadAttributes (205ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3069 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 124.8 MB.
+System memory in use after: 125.0 MB.
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 3518.
+Total: 2.679200 ms (FindLiveObjects: 0.326100 ms CreateObjectMapping: 0.143700 ms MarkObjects: 2.146800 ms  DeleteObjects: 0.061200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Prefabs/Pipes/Warp Green Pipe 2x2 Up.prefab
+  artifactKey: Guid(699031f48efc94cf0a80de75a7ae29c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pipes/Warp Green Pipe 2x2 Up.prefab using Guid(699031f48efc94cf0a80de75a7ae29c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '218b0689515dbb1f5f8f4960cd2e734e') in 0.109345 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/Prefabs/Pipes/Warp Green Pipe Side Long.prefab
+  artifactKey: Guid(bce07b3d21f4e4410b04d83d1d6eade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pipes/Warp Green Pipe Side Long.prefab using Guid(bce07b3d21f4e4410b04d83d1d6eade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7990a5804e98149fabbf34aebe99df81') in 0.028608 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Prefabs
+  artifactKey: Guid(bf4ffbbc248174935b671a44d7d2bafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs using Guid(bf4ffbbc248174935b671a44d7d2bafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f274f5a7c0dc4c16318f8f936d450a1d') in 0.006066 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/Prefabs/Pipes
+  artifactKey: Guid(3c04e1bca30bd4547bac444ce5a8cd8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pipes using Guid(3c04e1bca30bd4547bac444ce5a8cd8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b98e08d286bb47391197e8d103caa78') in 0.006540 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Prefabs/Pipes/Green Pipe 2x3.prefab
+  artifactKey: Guid(821c25020ee504bbf809183620187f71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pipes/Green Pipe 2x3.prefab using Guid(821c25020ee504bbf809183620187f71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da93f4d633472a5441ce81f953b4072d') in 0.018784 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/Prefabs/Pipes/Warp Green Pipe 2x4 Down.prefab
+  artifactKey: Guid(902297da33cba4c2dbbb70d29d19ccd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pipes/Warp Green Pipe 2x4 Down.prefab using Guid(902297da33cba4c2dbbb70d29d19ccd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3869ea5e3dd74341b6b613709091f070') in 0.029014 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/Prefabs/Pipes/Green Pipe 2x2.prefab
+  artifactKey: Guid(b96c82cf6024348128259a1909ed9b48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pipes/Green Pipe 2x2.prefab using Guid(b96c82cf6024348128259a1909ed9b48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '250160712e1a270cb9a540dbdb9648c6') in 0.016243 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Prefabs/Pipes/Warp Green Pipe 2x3 Down.prefab
+  artifactKey: Guid(1a293281701144832b15e0aa52619bfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pipes/Warp Green Pipe 2x3 Down.prefab using Guid(1a293281701144832b15e0aa52619bfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2d9e1a4a8f02b2257d34f1ff6cea481') in 0.027764 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Prefabs/Pipes/Green Pipe 2x4.prefab
+  artifactKey: Guid(c50db9611ec0942cd913f415d36c68a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pipes/Green Pipe 2x4.prefab using Guid(c50db9611ec0942cd913f415d36c68a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e7dc5fe7219916dd335febaab5327fc') in 0.023134 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/Prefabs/Pipes/Warp Green Pipe Side Short.prefab
+  artifactKey: Guid(9677d57be0fed4cbb847f328e6b7c0ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pipes/Warp Green Pipe Side Short.prefab using Guid(9677d57be0fed4cbb847f328e6b7c0ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17094b345bef6e2b1e6fe8e4b46f5ad7') in 0.020168 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Prefabs/Pipes/Warp Green Pipe 2x2 Down.prefab
+  artifactKey: Guid(6af6ab87ed8ba47c4932999f3f4eff85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pipes/Warp Green Pipe 2x2 Down.prefab using Guid(6af6ab87ed8ba47c4932999f3f4eff85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a27b9429fe76c2dc848b642e5c9b22d') in 0.015408 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 86.288242 seconds.
+  path: Assets/Prefabs/Pipes/Green Pipe 2x4.prefab
+  artifactKey: Guid(c50db9611ec0942cd913f415d36c68a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pipes/Green Pipe 2x4.prefab using Guid(c50db9611ec0942cd913f415d36c68a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17cc1a06e491f7d3bb6d610ff846f45f') in 0.023124 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.731019 seconds.
+  path: Assets/Prefabs/Pipes/Green Pipe 2x4.prefab
+  artifactKey: Guid(c50db9611ec0942cd913f415d36c68a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pipes/Green Pipe 2x4.prefab using Guid(c50db9611ec0942cd913f415d36c68a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c9e01ab4456ea851fa25e99e6b87e71') in 0.008822 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 427.984846 seconds.
+  path: Assets/Prefabs/Pipes/Pipe_Object.png
+  artifactKey: Guid(e3e00927525c28a48a6d08543df6cb26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pipes/Pipe_Object.png using Guid(e3e00927525c28a48a6d08543df6cb26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e999f136e452d76fdb503a1800010a47') in 0.039888 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 72.794214 seconds.
+  path: Assets/Prefabs/Pipes/Pipe_Object.png
+  artifactKey: Guid(e3e00927525c28a48a6d08543df6cb26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pipes/Pipe_Object.png using Guid(e3e00927525c28a48a6d08543df6cb26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '005b0dbd024568c5db78f61a40fce489') in 0.010188 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 63.522404 seconds.
+  path: Assets/Prefabs/Pipes/Pipe_Object.png
+  artifactKey: Guid(e3e00927525c28a48a6d08543df6cb26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pipes/Pipe_Object.png using Guid(e3e00927525c28a48a6d08543df6cb26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67a5fad6b82d6a517b1ba732bf010d4b') in 0.014335 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 77.011150 seconds.
+  path: Assets/Prefabs/Pipes/Green Pipe 2x4.prefab
+  artifactKey: Guid(c50db9611ec0942cd913f415d36c68a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pipes/Green Pipe 2x4.prefab using Guid(c50db9611ec0942cd913f415d36c68a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c47b470ce3e81f97cf9f1b52af093d54') in 0.019231 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 67.529090 seconds.
+  path: Assets/Prefabs/Pipes/Warp Green Pipe 2x4 Down.prefab
+  artifactKey: Guid(902297da33cba4c2dbbb70d29d19ccd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pipes/Warp Green Pipe 2x4 Down.prefab using Guid(902297da33cba4c2dbbb70d29d19ccd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b75a38e1ac97ef0cf6502fa3af4b885') in 0.017174 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 41.453953 seconds.
+  path: Assets/Prefabs/Pipes/Warp Green Pipe 2x4 Down.prefab
+  artifactKey: Guid(902297da33cba4c2dbbb70d29d19ccd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pipes/Warp Green Pipe 2x4 Down.prefab using Guid(902297da33cba4c2dbbb70d29d19ccd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fade6c9ca8e200eb4c6cbe91571b15de') in 0.015595 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 41.538584 seconds.
+  path: Assets/Sprites/character_colors.png
+  artifactKey: Guid(0d51850bda83cb949a18efbc45a75922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/character_colors.png using Guid(0d51850bda83cb949a18efbc45a75922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '816189c7d081777e7750f5ed75f34156') in 0.029351 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 768.245840 seconds.
+  path: Assets/Prefabs/Pipes/Warp Green Pipe 2x4 Down.prefab
+  artifactKey: Guid(902297da33cba4c2dbbb70d29d19ccd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pipes/Warp Green Pipe 2x4 Down.prefab using Guid(902297da33cba4c2dbbb70d29d19ccd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad1d514c252ac75f3d0e191f0608e9cb') in 0.015338 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 55.218911 seconds.
+  path: Assets/Prefabs/Pipes/Green Pipe 2x4.prefab
+  artifactKey: Guid(c50db9611ec0942cd913f415d36c68a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pipes/Green Pipe 2x4.prefab using Guid(c50db9611ec0942cd913f415d36c68a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c322c68c8b9e0bbe82f4888d51410e9f') in 0.026064 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.900368 seconds.
+  path: Assets/Prefabs/Pipes/Green Pipe 2x4.prefab
+  artifactKey: Guid(c50db9611ec0942cd913f415d36c68a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pipes/Green Pipe 2x4.prefab using Guid(c50db9611ec0942cd913f415d36c68a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4da0b2edafc14c9faaaf26dc66cb1d8') in 0.025292 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.682307 seconds.
+  path: Assets/Prefabs/Pipes/Green Pipe 2x4.prefab
+  artifactKey: Guid(c50db9611ec0942cd913f415d36c68a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pipes/Green Pipe 2x4.prefab using Guid(c50db9611ec0942cd913f415d36c68a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82b660263d1146971d4779192a265fbb') in 0.014101 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 66.014563 seconds.
+  path: Assets/Prefabs/Pipes/Warp Green Pipe 2x4 Down.prefab
+  artifactKey: Guid(902297da33cba4c2dbbb70d29d19ccd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pipes/Warp Green Pipe 2x4 Down.prefab using Guid(902297da33cba4c2dbbb70d29d19ccd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48da566f36382749f6238a7a4fc44760') in 0.017567 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 210.918586 seconds.
+  path: Assets/Prefabs/Pipes/Warp Green Pipe 2x4 Down.prefab
+  artifactKey: Guid(902297da33cba4c2dbbb70d29d19ccd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pipes/Warp Green Pipe 2x4 Down.prefab using Guid(902297da33cba4c2dbbb70d29d19ccd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffe231b3779b01d9b97b42879b6b95f4') in 0.016641 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 38.688341 seconds.
+  path: Assets/Prefabs/Pipes/Warp Green Pipe 2x4 Down.prefab
+  artifactKey: Guid(902297da33cba4c2dbbb70d29d19ccd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pipes/Warp Green Pipe 2x4 Down.prefab using Guid(902297da33cba4c2dbbb70d29d19ccd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc012300802d034de44678d56482449c') in 0.018046 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 32.454519 seconds.
+  path: Assets/Prefabs/Pipes/Warp Green Pipe 2x4 Down.prefab
+  artifactKey: Guid(902297da33cba4c2dbbb70d29d19ccd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pipes/Warp Green Pipe 2x4 Down.prefab using Guid(902297da33cba4c2dbbb70d29d19ccd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16ff7b5e575efe6428091e33ea58f10b') in 0.018537 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.281408 seconds.
+  path: Assets/Prefabs/Pipes/Warp Green Pipe 2x4 Down.prefab
+  artifactKey: Guid(902297da33cba4c2dbbb70d29d19ccd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pipes/Warp Green Pipe 2x4 Down.prefab using Guid(902297da33cba4c2dbbb70d29d19ccd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e59cef2ef59aeb3caa61d6651b2fee33') in 0.021059 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 37.674526 seconds.
+  path: Assets/Prefabs/Pipes/Warp Green Pipe 2x4 Down.prefab
+  artifactKey: Guid(902297da33cba4c2dbbb70d29d19ccd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pipes/Warp Green Pipe 2x4 Down.prefab using Guid(902297da33cba4c2dbbb70d29d19ccd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a6603c14a9792311eebf18dacc23bde') in 0.015811 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.106198 seconds.
+  path: Assets/Prefabs/Pipes/Warp Green Pipe 2x4 Down.prefab
+  artifactKey: Guid(902297da33cba4c2dbbb70d29d19ccd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pipes/Warp Green Pipe 2x4 Down.prefab using Guid(902297da33cba4c2dbbb70d29d19ccd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72e32a78bbe491062822fc6d5ef4dd88') in 0.014268 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.370537 seconds.
+  path: Assets/Prefabs/Pipes/Warp Green Pipe 2x4 Down.prefab
+  artifactKey: Guid(902297da33cba4c2dbbb70d29d19ccd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pipes/Warp Green Pipe 2x4 Down.prefab using Guid(902297da33cba4c2dbbb70d29d19ccd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90b7fcf9c0d6b68d3c19adfbe8b5751d') in 0.013353 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2134.108390 seconds.
+  path: Assets/Prefabs/Pipes/Warp Green Pipe 2x4 Down.prefab
+  artifactKey: Guid(902297da33cba4c2dbbb70d29d19ccd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pipes/Warp Green Pipe 2x4 Down.prefab using Guid(902297da33cba4c2dbbb70d29d19ccd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dced044ce0bc651fa64deab193fe1fe') in 0.013246 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 35.470624 seconds.
+  path: Assets/Prefabs/Pipes/Warp Green Pipe 2x4 Down.prefab
+  artifactKey: Guid(902297da33cba4c2dbbb70d29d19ccd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pipes/Warp Green Pipe 2x4 Down.prefab using Guid(902297da33cba4c2dbbb70d29d19ccd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16fc6b3f7541c3614735e4ca9af9e502') in 0.015537 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 29.822779 seconds.
+  path: Assets/Prefabs/Pipes/Warp Green Pipe 2x4 Down.prefab
+  artifactKey: Guid(902297da33cba4c2dbbb70d29d19ccd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pipes/Warp Green Pipe 2x4 Down.prefab using Guid(902297da33cba4c2dbbb70d29d19ccd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02f2f77afd552ce71ae975999362a43d') in 0.012615 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.385289 seconds.
+  path: Assets/Prefabs/Pipes/Warp Green Pipe 2x4 Down.prefab
+  artifactKey: Guid(902297da33cba4c2dbbb70d29d19ccd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pipes/Warp Green Pipe 2x4 Down.prefab using Guid(902297da33cba4c2dbbb70d29d19ccd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fa2d60eedbb4e0c935724fda6bc14b7') in 0.009486 seconds 
