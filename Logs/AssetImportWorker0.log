@@ -359,3 +359,4 @@ Received Import Request.
   path: Assets/Prefabs/Pipes/Warp Green Pipe 2x4 Down.prefab
   artifactKey: Guid(902297da33cba4c2dbbb70d29d19ccd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Prefabs/Pipes/Warp Green Pipe 2x4 Down.prefab using Guid(902297da33cba4c2dbbb70d29d19ccd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fa2d60eedbb4e0c935724fda6bc14b7') in 0.009486 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
