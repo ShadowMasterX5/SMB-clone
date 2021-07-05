@@ -5,8 +5,10 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 
-public class MainMenu : MonoBehaviour {
+public class MainMenu : MonoBehaviour 
+{
 	private GameStateManager t_GameStateManager;
+
 	public Text TopText;
 
 	public GameObject VolumePanel;
@@ -16,18 +18,21 @@ public class MainMenu : MonoBehaviour {
 	public bool volumePanelActive;
 
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
 		t_GameStateManager = FindObjectOfType<GameStateManager> ();
 		t_GameStateManager.ConfigNewGame ();
 
 		int currentHighScore = PlayerPrefs.GetInt ("highScore", 0);
 		TopText.text = "TOP- " + currentHighScore.ToString ("D6");
 
-		if (!PlayerPrefs.HasKey ("soundVolume")) {
+		if (!PlayerPrefs.HasKey ("soundVolume")) 
+		{
 			PlayerPrefs.SetFloat ("soundVolume", 1);
 		}
 
-		if (!PlayerPrefs.HasKey ("musicVolume")) {
+		if (!PlayerPrefs.HasKey ("musicVolume")) 
+		{
 			PlayerPrefs.SetFloat ("musicVolume", 1);
 		}
 
@@ -38,68 +43,67 @@ public class MainMenu : MonoBehaviour {
 			+ "; music=" + PlayerPrefs.GetFloat ("musicVolume"));
 	}
 
-	public void OnMouseHover(Button button) {
-		if (!volumePanelActive) {
-			GameObject cursor = button.transform.Find ("Cursor").gameObject;
-			cursor.SetActive (true);
-		}
-	}
-
-	public void OnMouseHoverExit(Button button) {
-		if (!volumePanelActive) {
-			GameObject cursor = button.transform.Find ("Cursor").gameObject;
-			cursor.SetActive (false);
-		}
-	}
-
-	public void StartNewGame() {
-		if (!volumePanelActive) {
+	public void StartNewGame() 
+	{
+		if (!volumePanelActive) 
+		{
 			t_GameStateManager.sceneToLoad = "World 1-1";
 			SceneManager.LoadScene ("Level Start Screen");
 		}
 	}
 
-	public void StartWorld1_2() {
-		if (!volumePanelActive) {
+	public void StartWorld1_2() 
+	{
+		if (!volumePanelActive) 
+		{
 			t_GameStateManager.sceneToLoad = "World 1-2";
 			SceneManager.LoadScene ("Level Start Screen");
 		}
 	}
 		
-	public void StartWorld1_3() {
-		if (!volumePanelActive) {
+	public void StartWorld1_3() 
+	{
+		if (!volumePanelActive) 
+		{
 			t_GameStateManager.sceneToLoad = "World 1-3";
 			SceneManager.LoadScene ("Level Start Screen");
 		}
 	}
 
 
-	public void StartWorld1_4() {
-		if (!volumePanelActive) {
+	public void StartWorld1_4() 
+	{
+		if (!volumePanelActive) 
+		{
 			t_GameStateManager.sceneToLoad = "World 1-4";
 			SceneManager.LoadScene ("Level Start Screen");
 		}
 	}
 
-	public void QuitGame() {
-		if (!volumePanelActive) {
+	public void QuitGame() 
+	{
+		if (!volumePanelActive) 
+		{
 			Application.Quit ();
 		}
 	}
 
-	public void SelectVolume() {
+	public void SelectVolume() 
+	{
 		VolumePanel.SetActive (true);
 		volumePanelActive = true;
 	}
 
-	public void SetVolume() {
+	public void SetVolume() 
+	{
 		PlayerPrefs.SetFloat ("soundVolume", SoundSlider.GetComponent<Slider> ().value);
 		PlayerPrefs.SetFloat ("musicVolume", MusicSlider.GetComponent<Slider> ().value);
 		VolumePanel.SetActive (false);
 		volumePanelActive = false;
 	}
 
-	public void CancelSelectVolume() {
+	public void CancelSelectVolume() 
+	{
 		SoundSlider.GetComponent<Slider> ().value = PlayerPrefs.GetFloat ("soundVolume");
 		MusicSlider.GetComponent<Slider> ().value = PlayerPrefs.GetFloat ("musicVolume");
 		VolumePanel.SetActive (false);

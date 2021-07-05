@@ -9,6 +9,8 @@ using UnityEngine;
 public class Mario : MonoBehaviour 
 {
 	private LevelManager t_LevelManager;
+	[HideInInspector]
+	public InputController inputController;
 	private Transform m_GroundCheck1, m_GroundCheck2;
 	private GameObject m_StompBox;
 	private Animator m_Animator;
@@ -328,12 +330,12 @@ public class Mario : MonoBehaviour
 	{
 		if (!inputFreezed) 
 		{
-			faceDirectionX = Input.GetAxisRaw ("Horizontal"); // > 0 for right, < 0 for left
-			isDashing = Input.GetButton ("Dash");
+			faceDirectionX = inputController.xAxis1.direction; // > 0 for right, < 0 for left
+			isDashing = inputController.buttonB.isHeld;
 			isCrouching = Input.GetButton ("Crouch");
-			isShooting = Input.GetButtonDown ("Dash");
-			jumpButtonHeld = Input.GetButton ("Jump");
-			if (Input.GetButtonUp ("Jump")) 
+			isShooting = inputController.buttonB.isPressed;
+			jumpButtonHeld = inputController.buttonA.isHeld;
+			if (inputController.buttonA.isReleased) 
 			{
 				jumpButtonReleased = true;
 			}
