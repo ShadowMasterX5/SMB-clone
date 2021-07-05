@@ -70,6 +70,7 @@ public class Mario : MonoBehaviour
 	void Start () 
 	{
 		t_LevelManager = FindObjectOfType<LevelManager>();
+		inputController = GetComponent<InputController>();
 		m_GroundCheck1 = transform.Find ("Ground Check 1");
 		m_GroundCheck2 = transform.Find ("Ground Check 2");
 		m_StompBox = transform.Find ("Stomp Box").gameObject;
@@ -332,7 +333,7 @@ public class Mario : MonoBehaviour
 		{
 			faceDirectionX = inputController.xAxis1.direction; // > 0 for right, < 0 for left
 			isDashing = inputController.buttonB.isHeld;
-			isCrouching = Input.GetButton ("Crouch");
+			isCrouching = inputController.yAxis1.direction == -1;
 			isShooting = inputController.buttonB.isPressed;
 			jumpButtonHeld = inputController.buttonA.isHeld;
 			if (inputController.buttonA.isReleased) 
