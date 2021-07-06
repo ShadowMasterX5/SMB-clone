@@ -50,7 +50,7 @@ public class Mario : MonoBehaviour
 	public float levelEntryWalkSpeedX = 48.8f;
 
 	private bool isGrounded;
-	private bool isDashing;
+	public bool isDashing;
 	private bool isFalling;
 	private bool isJumping;
 	private bool isChangingDirection;
@@ -351,12 +351,12 @@ public class Mario : MonoBehaviour
 				deadUpTimer -= Time.unscaledDeltaTime;
 				if (deadUpTimer > 0) { // TODO MovePosition not working
 //					m_Rigidbody2D.MovePosition (m_Rigidbody2D.position + deadUpVelocity * Time.unscaledDeltaTime);
-					gameObject.transform.position += Vector3.up * 0.22f;
+					gameObject.transform.position += Vector3.up * 3.52f;
 				} 
 				else 
 				{
 //					m_Rigidbody2D.MovePosition (m_Rigidbody2D.position + deadDownVelocity * Time.unscaledDeltaTime);
-					gameObject.transform.position += Vector3.down * 0.2f;
+					gameObject.transform.position += Vector3.down * 3.2f;
 				}
 			} 
 			else if (isClimbingFlagPole) 
