@@ -147,10 +147,14 @@ public class LevelManager : MonoBehaviour {
 			MarioRespawn (true);
 		}
 
-		if (Input.GetButtonDown ("Pause")) {
-			if (!gamePaused) {
+		if (Input.GetButtonDown("Start")) 
+		{
+			if (!gamePaused) 
+			{
 				StartCoroutine (PauseGameCo ());
-			} else {
+			} 
+			else 
+			{
 				StartCoroutine (UnpauseGameCo ());
 			}
 		}
