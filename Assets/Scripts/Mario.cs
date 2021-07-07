@@ -37,29 +37,29 @@ public class Mario : MonoBehaviour
 	private float maxWalkSpeedX = 93.76f;
 	private float maxRunSpeedX = 153.76f;
 
-	private float jumpSpeedY;
-	private float jumpUpGravity;
-	private float jumpDownGravity;
+	public float jumpSpeedY;
+	public float jumpUpGravity;
+	public float jumpDownGravity;
 	private float midairAccelerationX;
 	private float midairDecelerationX;
 
 	private float automaticWalkSpeedX;
-	private float automaticGravity;
+	public float automaticGravity;
 
 	public float castleWalkSpeedX = 93.76f;
 	public float levelEntryWalkSpeedX = 48.8f;
 
-	private bool isGrounded;
+	public bool isGrounded;
 	public bool isDashing;
-	private bool isFalling;
-	private bool isJumping;
+	public bool isFalling;
+	public bool isJumping;
 	private bool isChangingDirection;
 	private bool wasDashingBeforeJump;
 	private bool isShooting;
 	public bool isCrouching;
 
-	private bool jumpButtonHeld;
-	private bool jumpButtonReleased;
+	public bool jumpButtonHeld;
+	public bool jumpButtonReleased;
 
 	public bool inputFreezed;
 
