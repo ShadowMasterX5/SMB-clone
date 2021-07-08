@@ -35,7 +35,7 @@ public class RegularBrickBlock : MonoBehaviour {
 
 			// check and collect coins on top
 			if (m_CoinDetector.coinOnTop) {
-				Instantiate (BlockCoin, transform.position + new Vector3(0, 2, 0), Quaternion.identity);
+				Instantiate (BlockCoin, transform.position + new Vector3(0, 32, 0), Quaternion.identity);
 				Destroy (m_CoinDetector.coinOnTop);
 			}
 
@@ -72,7 +72,7 @@ public class RegularBrickBlock : MonoBehaviour {
 	// check for enemy on top
 	void OnCollisionStay2D(Collision2D other) {
 		Vector2 normal = other.contacts[0].normal;
-		Vector2 topSide = new Vector2 (0f, -1f);
+		Vector2 topSide = new Vector2 (0f, -16f);
 		bool topHit = normal == topSide;
 		if (other.gameObject.tag.Contains("Enemy") && topHit && !enemiesOnTop.Contains (other.gameObject)) {
 			enemiesOnTop.Add (other.gameObject);

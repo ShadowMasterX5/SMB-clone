@@ -71,7 +71,7 @@ public class CollectibleBlock : MonoBehaviour {
 	// check for enemy on top
 	void OnCollisionStay2D(Collision2D other) {
 		Vector2 normal = other.contacts[0].normal;
-		Vector2 topSide = new Vector2 (0f, -1f);
+		Vector2 topSide = new Vector2 (0f, -16f);
 		bool topHit = normal == topSide;
 		if (other.gameObject.tag.Contains("Enemy") && topHit && !enemiesOnTop.Contains(other.gameObject)) {
 			enemiesOnTop.Add(other.gameObject);

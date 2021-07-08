@@ -13,7 +13,7 @@ public class StaticBlock : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D other) {
 		Vector2 normal = other.contacts[0].normal;
-		Vector2 bottomSide = new Vector2 (0f, 1f);
+		Vector2 bottomSide = new Vector2 (0f, 16f);
 		bool bottomHit = normal == bottomSide;
 
 		if (other.gameObject.tag == "Player" && bottomHit) {

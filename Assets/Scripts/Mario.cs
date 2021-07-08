@@ -23,7 +23,7 @@ public class Mario : MonoBehaviour
 
 	private float faceDirectionX;
 	private float moveDirectionX;
-	private float normalGravity;
+	public float normalGravity;
 
 	private float currentSpeedX;
 	private float speedXBeforeJump;
